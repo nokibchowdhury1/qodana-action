@@ -135095,6 +135095,7 @@ var require_utils10 = __commonJS({
             ignoreReturnCode: true
           });
           if (exitCode !== 0) {
+            core2.info("No uncommitted changes detected, skipping push");
             return;
           }
           exitCode = yield git(["pull", "--rebase", "origin", currentBranch]);
