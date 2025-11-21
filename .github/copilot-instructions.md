@@ -99,7 +99,7 @@ cd gitlab && npm run build && npm run package  # Creates gitlab/dist/
 
 - **Commit messages**: Use [Gitmoji](https://gitmoji.dev) (e.g., `:sparkles:` for features)
 - **Linting**: ESLint config in `.github/linters/.eslintrc.yml` + Prettier
-- **Node.js version**: Pinned in `.node-version` (currently 21.6.2)
+- **Node.js version**: Pinned in `.node-version`
 - **TypeScript**: Strict mode, shared config in `tsconfig.base.json`
 
 ## Common Debugging Scenarios
