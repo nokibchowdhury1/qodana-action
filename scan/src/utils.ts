@@ -188,6 +188,7 @@ export async function pushQuickFixes(
       ignoreReturnCode: true
     })
     if (exitCode !== 0) {
+      core.info('No uncommitted changes detected, skipping push')
       return
     }
     exitCode = await git(['pull', '--rebase', 'origin', currentBranch])
